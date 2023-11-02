@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+        <title>Document</title>
+
+        <style>
+            div {
+                height: 300px;
+                width: 200px;
+                background-color: red;
+            }
+
+            p {
+                background-color: yellow;
+            }
+
+        </style>
+
+
+
+    </head>
+    <body>
+        <div class="unique" >
+            <p> this is in paragraph </p>
+        </div>
+
+        <br> <br> <br> <br> <br> <br> 
+
+        <div id="one">
+            <p onclick="dosomething()">
+                this is in second paragraph 
+            </p>
+
+        </div>
+        
+        <script>
+
+            function dosomething() {
+
+                document.getElementById("one").innerHTML=" something new content via javascript ";
+                document.getElementsByClassName("unique").innerHTML="<h1>something new content </h1>";
+            }
+        </script>
+    </body>
+</html>
